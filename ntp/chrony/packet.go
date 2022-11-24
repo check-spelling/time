@@ -236,7 +236,7 @@ func (r *RequestHead) SetSequence(n uint32) {
 	r.Sequence = n
 }
 
-// RequestPacket is an iterface to abstract all different outgoing packets
+// RequestPacket is an interface to abstract all different outgoing packets
 type RequestPacket interface {
 	GetCommand() CommandType
 	SetSequence(n uint32)

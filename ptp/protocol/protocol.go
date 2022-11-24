@@ -403,7 +403,7 @@ type PDelayRespFollowUp struct {
 	PDelayRespFollowUpBody
 }
 
-// Packet is an iterface to abstract all different packets
+// Packet is an interface to abstract all different packets
 type Packet interface {
 	MessageType() MessageType
 	SetSequence(uint16)
