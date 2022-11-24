@@ -40,7 +40,7 @@ C API can be used to build a client in any language. Clients don't need special 
 
 * **M** is the *measurement*, based on N recent values we obtain from ptp4l, such as offset, path delay, or GM clock accuracy
 * **W** is the *error bound* before it's adjusted for holdover, based on recent values of `M`
-* **Drift** is the estimation of local oscillator drift during the holdover, based on changes in PHC frequency andjustments.
+* **Drift** is the estimation of local oscillator drift during the holdover, based on changes in PHC frequency adjustments.
 
 This all comes together when real WOU is calculated for each API call, when client part of the code uses *W* and *Drift* values received from fbclock-daemon and adjusts W based on how far in the past the latest synchronization with GM happened.
 
