@@ -414,7 +414,7 @@ type BinaryMarshalerTo interface {
 	MarshalBinaryTo([]byte) (int, error)
 }
 
-// BytesTo marhals packets that support this optimized marshalling into []byte
+// BytesTo marshalls packets that support this optimized marshalling into []byte
 func BytesTo(p BinaryMarshalerTo, buf []byte) (int, error) {
 	n, err := p.MarshalBinaryTo(buf)
 	if err != nil {
