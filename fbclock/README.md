@@ -4,7 +4,7 @@ Client C library and stateful Go daemon to provide true time API based on PTP ti
 
 *fbclock* doesn't just provide a single timestamp, instead it provides an [Earliest, Latest] values that incorporate calculated Window of Uncertainty.
 
-The idea is using the math based on observed PTP client metrics like offset/path delay/frequency adjustments that allows estimating the level of uncertaintly for current time taken from the NIC PHC.
+The idea is using the math based on observed PTP client metrics like offset/path delay/frequency adjustments that allows estimating the level of uncertainty for current time taken from the NIC PHC.
 
 Then on each request to the fbclock API the client gets a tuple of [Earliest, Latest] values, with 6-9s guarantee that 'true time' lies withing this range.
 
