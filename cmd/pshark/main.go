@@ -168,7 +168,7 @@ func run(input string, filter []ptp.MessageType) error {
 			if !filterMap[ptpContent.Packet.MessageType()] {
 				continue
 			}
-			// decode src and dst adddress and port
+			// decode src and dst address and port
 			var srcIP, dstIP net.IP
 			var srcPort, dstPort layers.UDPPort
 			ip6Layer := packet.Layer(layers.LayerTypeIPv6)
