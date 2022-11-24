@@ -667,7 +667,7 @@ type ReplyServerStats3 struct {
 	ServerStats3
 }
 
-// here go request constuctors
+// here go request constructors
 
 // NewSourcesPacket creates new packet to request number of sources (peers)
 func NewSourcesPacket() *RequestSources {
